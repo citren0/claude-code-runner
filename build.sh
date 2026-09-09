@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build . -t claude-code:latest
+docker build . -t agents:latest

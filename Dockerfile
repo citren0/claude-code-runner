@@ -4,4 +4,10 @@ RUN apt update -y
 
 RUN apt install -y curl
 
-RUN curl -fsSL https://claude.ai/install.sh | bash
+COPY entrypoint.sh /usr/bin/entrypoint.sh
+RUN chmod +x /usr/bin/entrypoint.sh
+
+USER ubuntu
+
+ENTRYPOINT ["/usr/bin/entrypoint.sh"]
+
