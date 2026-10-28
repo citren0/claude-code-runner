@@ -5,6 +5,12 @@
       "api": "openai-completions",
       "apiKey": "ollama",
       "models": [{ "id": "qwen3-coder:30b" }, { "id": "qwen3.8:27b" }]
+    },
+    "llama-server": {
+      "baseUrl": "http://172.17.0.1:8080/v1",
+      "api": "openai-completions",
+      "apiKey": "asdf",
+      "models": [{ "id": "unsloth/Qwen3.8-27B-GGUF:Q6_K", "reasoning": true, "contextWindow": 131072 }]
     }
   }
 }
